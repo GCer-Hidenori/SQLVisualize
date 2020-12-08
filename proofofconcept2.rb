@@ -349,10 +349,10 @@ def parse(elem)
 			case tmp_ary.length
 			when 1
 			when 2
-				tmp_ary[0].edge_to(tmp_ary[1],style: "",arrowhead: "none")
+				tmp_ary[0].edge_to(tmp_ary[1],style: "invisible",arrowhead: "none")
 			when 3
-				tmp_ary[0].edge_to(tmp_ary[1],style: "",arrowhead: "none")
-				tmp_ary[1].edge_to(tmp_ary[2],style: "",arrowhead: "none")
+				tmp_ary[0].edge_to(tmp_ary[1],style: "invisible",arrowhead: "none")
+				tmp_ary[1].edge_to(tmp_ary[2],style: "invisible",arrowhead: "none")
 			end
 		elsif elem.attributes["class"] == "NamedTableReference"
 			table = XPath.first(elem,"children[@type='SchemaObject']/node[@class='SchemaObjectName']")
